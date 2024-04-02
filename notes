@@ -9,12 +9,11 @@ Variable
             snakecase [first_name]
             pascalcase [FirstName]
     Data types
-        Intergers
-            decimal
-            binary
-            hexadecimal
-            octal
+        Intergers (bin() is prefixed with 0b, hex() is pre fixed with 0x, oct() is pre fixed with 0o.
         float
+        bool
+        complex
+
         Strings
             strings are sequence of characters
             strings support indexing and slicing[start:stop:step]
@@ -24,14 +23,14 @@ Variable
             string manipulation (.upper(),.lower(),.capitalize() etc)
 
     operators
-            Assignment operator : =, *= (x = x*3) x*=3, +=,-=,/=
+            Assignment operator : =, *= (x = x*3) is same as x*=3, +=,-=,/=
             Arithmetic operators : +, -, /, *, %, //
             relational operators : >, <, <=, >=, ==, !=
             logical operators: &&, ||, !! (AND, OR, NOT)
 
 print format
             string interpolation
-            1. with %d, %s placeholder   ex: ("hello %s"name)
+            1. with %d, %s placeholder   ex: ("hello %s"(%name)
             2. .format()           ex: ("hello {}".format(name))
             3. f string formating  ex: (f"hello {name}")
 
