@@ -1,0 +1,42 @@
+History - Guido Von Rossum Netherlands
+current version of python is 3.12
+
+Variable
+    Object Reference
+        garbage collection
+    Naming convention
+            Camelcase [firstName]
+            snakecase [first_name]
+            pascalcase [FirstName]
+    Data types
+        Intergers
+            decimal
+            binary
+            hexadecimal
+            octal
+        float
+        Strings
+            strings are sequence of characters
+            strings support indexing and slicing[start:stop:step]
+            strings are immutable
+            len(<variable name>) to output the length of a string
+            String cancatination using + operator
+            string manipulation (.upper(),.lower(),.capitalize() etc)
+
+    operators
+            Assignment operator : =, *= (x = x*3) x*=3, +=,-=,/=
+            Arithmetic operators : +, -, /, *, %, //
+            relational operators : >, <, <=, >=, ==, !=
+            logical operators: &&, ||, !! (AND, OR, NOT)
+
+print format
+            string interpolation
+            1. with %d, %s placeholder   ex: ("hello %s"name)
+            2. .format()           ex: ("hello {}".format(name))
+            3. f string formating  ex: (f"hello {name}")
+
+    list
+          lists are ordered sequence of elements
+          lists are mutable
+          list support index and slicing
+          it can hold heterogenous data types
