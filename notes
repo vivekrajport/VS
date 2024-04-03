@@ -39,3 +39,6 @@ print format
           lists are mutable
           list support index and slicing
           it can hold heterogenous data types
+
+    tuples
+         ordere
