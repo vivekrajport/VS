@@ -1,0 +1,7 @@
+# h/w using func -10 students 5 subject marks ...add/delete/edit marks
+#student to see their marks
+#stu_names=["Nikitha","Dinesh","Divya","Shreya","Abhi"]
+#subj_name=["English","Maths","Science","Social","Kannada"]
+dict1={"Nikitha":{"English":87,"Maths":89,"Science":90,"Social":95,"Kannada":86}
+       ,"Dinesh":{"English":95,"Maths":90,"Science","Social","Kannada"},"Divya","Shreya","Abhi"}
+print(dict1)
