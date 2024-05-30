@@ -1,0 +1,44 @@
+# h/w using func -10 students 5 subject marks ...add/delete/edit marks
+#student to see their marks
+#stu_names=["Nikitha","Dinesh","Divya","Shreya","Abhi"]
+subj_name=["English","Maths","Science","Social","Kannada"]
+dict1={"Nikitha":{"English":87,"Maths":89,"Science":90,"Social":95,"Kannada":86}
+       ,"Dinesh":{"English":95,"Maths":90,"Science":96,"Social":70,"Kannada":100},
+       "Divya":{"English":75,"Maths":80,"Science":66,"Social":90,"Kannada":50},
+       "Shreya":{"English":55,"Maths":65,"Science":45,"Social":67,"Kannada":90},
+       "Abhi":{"English":75,"Maths":60,"Science":86,"Social":50,"Kannada":60}}
+
+
+def view(name):
+    print(f"{name} marks")
+    total = 0
+    for i in dict1[name]:
+        print(f"{i} : {dict1[name][i]}")
+        total += dict1[name][i]
+    print(f"Total : {total}")
+        
+
+def add():
+    name = input("Enter students name: ")
+    dict1[name] = {"English":0,"Maths":0,"Science":0,"Social":0,"Kannada":0}
+    dict1[name]["English"] = eval(input("Enter marks for english: "))
+    dict1[name]["Maths"] = eval(input("Enter marks for maths: "))
+    dict1[name]["Science"] = eval(input("Enter marks for Science: "))
+    dict1[name]["Social"] = eval(input("Enter marks for Social: "))
+    dict1[name]["Kannada"] = eval(input("Enter marks for Kannada: "))
+
+
+stu_name = input("Enter students name: ")
+#add()
+#view(stu_name)
+def delete(name):
+    del dict1[name]
+    
+
+def edit(name):
+    subject = input("Enter subject to edit: ")
+    dict1[name][subject] = eval(input("Enter marks for {}: ".format(subject)))
+    
+#edit(stu_name)
+delete(stu_name)
+
